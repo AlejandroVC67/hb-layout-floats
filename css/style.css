@@ -104,4 +104,22 @@
 
 }
 
+@media(max-width:600px){
+    .cajas-grandes{
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+
+    .cajas-grandes:last-child{
+        margin-top: 20px;
+    }
+
+    .cajas-pequenas{
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+}
+
 
