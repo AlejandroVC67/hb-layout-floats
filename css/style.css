@@ -1,3 +1,107 @@
-h1{
-    color: palegoldenrod;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    
+}
+
+.header{
+    position: fixed;
+    margin-top: 20px;
+    height: 80px;
+    max-width: 1024px;  
+    width: 100%; 
+    background-color: aqua; 
+}
+
+.titulo{
+    text-align: center;
+}
+
+.box{
+    border: 1px solid;
+}
+
+.contenedor-grande{
+    overflow: hidden;
+}
+.contenedor-pequeno{
+    overflow: hidden;
+}
+
+.cajas-grandes{
+    width: calc(50% - (20px/ 2));
+    height: 300px;
+    margin-top: 121px;
+    margin-left: 20px;
+}
+
+.cajas-grandes:first-child{
+    margin-left: 0px;
+}
+
+.grande-izquierda{
+    float: left;
+    background-color: black;
+}
+
+.grande-derecha{
+    float: left;
+    background-color: blue;
+}  
+
+.cajas-pequenas{
+    width: calc(33.3333% - (40px / 3));
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.cajas-pequenas:first-child{
+    margin-left: 0px;
+}
+
+.pequena-izquierda{
+    float: left;
+    background-color: coral;
+}
+
+.pequena-mitad{
+    float: left;
+    
+    background-color: palegreen;
+}
+
+.pequena-derecha{
+    float: left;
+    
+    background-color: wheat;
+}
+
+.footer{
+    max-width: 1024px;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    background-color: mediumvioletred;
+    position: relative;
+    
+}
+
+.caja-minima{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -75px;
+
+}
+
+
