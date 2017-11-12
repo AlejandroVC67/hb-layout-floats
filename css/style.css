@@ -15,10 +15,8 @@
     height: 80px;
     max-width: 1024px;  
     width: 100%; 
-    background-color: #D8D8D8; 
-}
-
-.titulo{
+    background-color: #D8D8D8;
+    line-height: 80px; 
     text-align: center;
 }
 
@@ -28,57 +26,37 @@
     background-color: #D8D8D8;
 }
 
-.contenedor-grande{
+.big-wrapper{
     overflow: hidden;
 }
-.contenedor-pequeno{
+.small-wrapper{
     overflow: hidden;
 }
 
-.cajas-grandes{
+.big-item{
     width: calc(50% - (20px/ 2));
     height: 300px;
     margin-top: 100px;
     margin-left: 20px;
-   
+    float: left;
 }
 
-.cajas-grandes:first-child{
+.big-item:first-child{
     margin-left: 0px;
 }
 
-.grande-izquierda{
-    float: left;
-    
-}
-
-.grande-derecha{
-    float: left;
-    
-}  
-
-.cajas-pequenas{
+.small-item{
     width: calc(33.3333% - (40px / 3));
     height: 120px;
     margin-top: 20px;
     margin-left: 20px;
-}
-
-.cajas-pequenas:first-child{
-    margin-left: 0px;
-}
-
-.pequena-izquierda{
     float: left; 
 }
 
-.pequena-mitad{
-    float: left;
+.small-item:first-child{
+    margin-left: 0px;
 }
 
-.pequena-derecha{
-    float: left;
-}
 
 .footer{
     max-width: 1024px;
@@ -89,7 +67,7 @@
     
 }
 
-.caja-minima{
+.square{
     width: 150px;
     height: 150px;
     position: absolute;
@@ -100,17 +78,17 @@
 }
 
 @media(max-width:600px){
-    .cajas-grandes{
+    .big-item{
         width: 100%;
         float: none;
         margin-left: 0px;
     }
 
-    .cajas-grandes:last-child{
+    .big-item:last-child{
         margin-top: 20px;
     }
 
-    .cajas-pequenas{
+    .small-item{
         width: 100%;
         float: none;
         margin-left: 0px;
